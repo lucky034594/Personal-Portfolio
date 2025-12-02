@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Web Developer</p>
+                <h1>Hi, I'm <span>Maghaz</span><br>Jan From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------About---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an experienced Frontend Developer width a solid foundation built since 2019,
+                        specializing in HTML, CSS and Javascript. My core focus is on creating high-impact,
+                        functional digital experiences that are exceptionally efficient and reliable. My 
+                        expertise ranges from transforming designs into responsive web interfaces that 
+                        ensure optimal performance across all devices. I am passionate about solving  
+                        real-world problems through clean, efficient code, and committed to driving 
+                        innovation in every project I udertake. I thrive on new challenges that allow me 
+                        to leverage my skills for impactful results.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links skills active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links experience" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links education" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML 5</span><br>Semantic HTML, Accessibility Standards</li>
+                            <li><span>CSS 3</span><br>Responsive Design, Flexbox & Grid, CSS variables</li>
+                            <li><span>Javascript</span><br>a versatile programming language that is a core technology <br> of the World Wide Web, alongside HTML and CSS.</li>
+                            <li><span>Bootstrap</span><br>front-end framework used to build responsive, mobile-first <br> websites quickly and easily.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025 - Current</span><br> Making Website Using HTML, CSS and Javascript</li>
+                            <li><span>2025 </span><br> Learning Bootstrap</li>
+                            <li><span>2019 - 2025</span><br> Practicing HTML & CSS.</li>
+                            <li><span>2019 - 2019</span><br> HTML & CSS Learning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2023</span><br> get FSc Degree and got 742 marks out of 1100.</li>
+                            <li><span>2021</span><br> Passes Matric got 824 out of 1100</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------------services---------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Front-End Development</h2>
+                    <p>I transform any design into a fully functional and interactive web interface using industry-standard
+                        HTML5, modern CSS3, and powerful Javascript. I ensure clean, semantic, and maintainable code is
+                        delivered for every project.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Responsive Layouts & Styling</h2>
+                    <p>I create modern, adaptive web layouts using CSS Flexbox, CSS Grid, and efficient frameworks like Bootstrap.
+                        My focus is on guaranteeing Cross-Browser Compatibility and a seamless display across all screen sizes.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h2>Interactive Web Features</h2>
+                    <p>I bring website to life using Javascript to implement dynamic features, incuding image sliders,
+                        complex form validation, animations, and other interactive elements.This enhances user engagement and site utility.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------Portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work work-1">
+                    <div class="imgfull">
+                        <img src="images/work-1.png" alt="">
+                        <button class="full1"><i class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                </div>
+                <div class="work work-2">
+                    <div class="imgfull">
+                        <img src="images/work-2.png" alt="">
+                        <button class="full2"><i class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                </div>
+                <div class="work work-3">
+                    <div class="imgfull">
+                        <img src="images/work-3.png" alt="">
+                        <button class="full3"><i class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ------------------Contact---------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> mashhoudjan033347@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 03704192651</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Kevin. Made with <i class="fas fa-heart"></i> by easy tutorial.</p>
+        </div>
+    </div>
+    <script>
+        // var tablinks = document.getElementsByClassName("tab-links");
+        // var tabcontents = document.getElementsByClassName("tab-contents");
+
+        // function opentab(tabname){
+        //     for(tablink of tablinks){
+        //         tablink.classList.remove("active-link");
+        //     }
+        //     for(tabcontent of tabcontents){
+        //         tabcontent.classList.remove("active-tab");
+        //     }
+        //     event.currentTarget.classList.add("active-link");
+        //     document.getElementById(tabname).classList.add("active-tab");
+        // }
+        const skillsTab = document.querySelector(".skills");
+        const experienceTab = document.querySelector(".experience");
+        const educationTab = document.querySelector(".education");
+
+        skillsTab.addEventListener("click", () =>{
+            skillsTab.classList.add("active-link");
+            experienceTab.classList.remove("active-link");
+            educationTab.classList.remove("active-link");
+            document.body.classList.add("skillstab");
+            document.body.classList.remove("experiencetab","educationtab");
+        });
+        experienceTab.addEventListener("click", () =>{
+            experienceTab.classList.add("active-link");
+            skillsTab.classList.remove("active-link");
+            educationTab.classList.remove("active-link");
+            document.body.classList.add("experiencetab");
+            document.body.classList.remove("skillstab","educationtab");
+        });
+        educationTab.addEventListener("click", () =>{
+            educationTab.classList.add("active-link");
+            skillsTab.classList.remove("active-link");
+            experienceTab.classList.remove("active-link");
+            document.body.classList.add("educationtab");
+            document.body.classList.remove("skillstab","experiencetab");
+        });
+
+        // const allTabs = [skillsTab, experienceTab, educationTab];
+
+        // allTabs.forEach(clickedItem =>{
+        //     clickedItem.addEventListener("click", () => {
+        //         allTabs.forEach(item => {
+        //             item.classList.remove("active-link");
+        //             // document.body.classList.remove()
+
+        //         });
+        //         clickedItem.classList.add("active-link");
+                
+        //         document.body.classList.add(clickedItem);
+        //     });
+        // });
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+        // const Full1 = document.querySelector(".full1");
+        // const Full2 = document.querySelector(".full2");
+        // const Imgful3 = document.querySelector(".imgfull3");
+        // const Full3 = document.querySelector(".full3");
+        // function fullweb1(){
+        //     Imgful1.style.height = "auto";
+        //     Full1.style.display = "none";
+        // }
+        // function fullweb2(){
+            
+        //     Imgful2.style.height = "auto";
+        //     Full2.style.display = "none";
+        // }
+        // function fullweb3(){
+        //     Imgful3.style.height = "auto";
+        //     Full3.style.display = "none";
+        // }
+        // function fullweb(itemNumber){
+        //     const Imgful = document.querySelectorAll(".imgfull");
+        //     Imgful.forEach((container , index) => {
+        //         const CurrentItemNum = index + 1;
+        //         const currentButton = document.querySelector(".full");
+        //         if (CurrentItemNum === itemNumber){
+        //             if(container.style.height === 'auto'){
+        //                 container.style.height === '200px';
+        //                 currentButton.style.display = 'block';
+        //                 console.log("auto set ho gaye hain ab ye 200px ko dege");
+        //             }
+        //             else{
+        //                 container.style.height = 'auto';
+        //                 currentButton.style.display = 'none';
+        //                 console.log("auto set ho jaye ge ab ");
+        //             }
+        //         }
+        //         else{
+        //             container.style.height = '200px'
+        //             currentButton.style.display = 'block';
+        //             console.log("default");
+        //         }
+        //     });
+        // }
+        var Full1 = document.querySelector(".full1");
+        var Full2 = document.querySelector(".full2");
+        var Full3 = document.querySelector(".full3");
+        var Work1 = document.querySelector(".work-1");
+        var Work2 = document.querySelector(".work-2");
+        var Work3 = document.querySelector(".work-3");
+
+        Full1.addEventListener("click", () => {
+            document.body.classList.toggle("Full1")
+        });
+        Full2.addEventListener("click", () => {
+            document.body.classList.toggle("Full2")
+        });
+        Full3.addEventListener("click", () => {
+            document.body.classList.toggle("Full3")
+        });
+
+
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyJvNEowcKPOA5tAPw_FhpYJx-ii7jTOYYlxrkeR0OsgqDejl5jBzHsVjCRaKapMjDO/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
